@@ -21,10 +21,10 @@ Route::namespace('Auth')->group(function() {
     // Rotas de clientes
     Route::post('/login', LoginContoller::class . '@login');
     Route::post('/registrar-se', RegistroController::class . '@store');
-    
+
 });
 
-
+//teste
 // Rotas autenticadas
 Route::namespace('API')->middleware('auth:sanctum')->group(function () {
 
