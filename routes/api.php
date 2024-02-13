@@ -24,7 +24,6 @@ Route::namespace('Auth')->group(function() {
 
 });
 
-//teste
 // Rotas autenticadas
 Route::namespace('API')->middleware('auth:sanctum')->group(function () {
 
@@ -34,5 +33,8 @@ Route::namespace('API')->middleware('auth:sanctum')->group(function () {
     Route::resource('/departamento', DepartamentoController::class);
     Route::resource('/categoria', CategoriaController::class);
     Route::resource('/sub-categoria', SubCategoriaController::class);
+
+    //Produto
+    Route::resource('/produto', ProdutoController::class);
 });
 
